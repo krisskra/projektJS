@@ -53,7 +53,7 @@ function deviation(data) {
     let variancyStart = 0;
     for (let i = 0; i < data.length; i++) {
         let num = data[i];
-        let varSubstr = num - arithave(ar);
+        let varSubstr = num - arithave(data);
         let varExp = varSubstr ** 2;
         variancyStart += varExp;
         var variancyOk = variancyStart / data.length;
